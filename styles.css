@@ -1,0 +1,117 @@
+:root {
+    --duos: none;
+    --trios: none;
+    --debug: none;
+}
+
+@font-face {
+    font-family: 'dukefill';
+    src: url('duke_fill-webfont.woff2') format('woff2'),
+         url('duke_fill-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    color: black;
+    font-family: dukefill, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+
+#duo {
+    background-image: url("images/button2.png");
+    background-size: 12vw 6vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    width: 12vw;
+    height: 6vw;
+    border: none;
+    font-family: dukefill;
+    color: white;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+}
+
+#trio {
+    background-image: url("images/button.png");
+    background-size: 12vw 6vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: right;
+    width: 12vw;
+    height: 6vw;
+    border: none;
+    font-family: dukefill;
+    color: white;
+    font-size: 4.5vw;
+    text-transform: uppercase;
+    float: right;
+}
+
+/* Duos */
+
+.duos {
+    color: white;
+    padding: 40px;
+    display: var(--duos);
+    flex-direction: row;
+    
+}
+
+.duos figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 35%;
+    height: auto;
+}
+
+.duos figure figcaption {
+    position: relative;
+    top: -10vw;
+    font-size: 7vw;
+    transform: rotate(-10deg);
+    text-shadow: black 0px 0px 1vw;
+}
+
+
+/* Trios */
+
+.trios {
+    color: white;
+    padding: 40px;
+    display: var(--trios);
+    flex-direction: row;
+}
+
+.trios figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 40%;
+    height: auto;
+}
+
+.trios figure figcaption {
+    position: relative;
+    top: -10vw;
+    font-size: 7vw;
+    transform: rotate(-10deg);
+    text-shadow: black 0px 0px 1vw;
+}
+
+
+
+footer {
+    display: var(--debug);
+}
+
